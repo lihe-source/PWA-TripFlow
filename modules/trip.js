@@ -20,7 +20,7 @@ export const TripStore = {
   addSpot(tripId, spot) {
     const m=loadAll(); if(!m[tripId]) return;
     const id='sp_'+Date.now();
-    m[tripId].spots.push({id,...spot,checklist:[],transportToNext:null});
+    m[tripId].spots.push({id,...spot,photo:spot.photo||"",checklist:[],transportToNext:null});
     m[tripId].updatedAt=new Date().toISOString();
     saveAll(m); return id;
   },
