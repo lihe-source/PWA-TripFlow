@@ -1,4 +1,4 @@
-const CACHE = 'tripflow-v1_0';
+const CACHE = 'tripflow-v1_1';
 const ASSETS = [
   './', './index.html', './app.js', './styles.css',
   './manifest.json', './update-config.js',
